@@ -1,0 +1,354 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    /* overflow-x: hidden; */
+}
+body{
+    background-image: linear-gradient(rgb(255, 156, 156), rgb(119, 233, 253));
+}
+
+.circle1 {
+    position: fixed;
+    top: 5%;
+    left: 20%;
+    width: 9em;
+    height: 9em;
+    border-radius: 30%;
+    box-shadow: 0 0 50px #48c0d8;
+    background: linear-gradient(-25deg, #48b2d8, #41c4f4);
+    animation: circle1Animate 10s infinite;
+  }
+  
+  @keyframes circle1Animate {
+   50%{
+    left: 33%;
+    top: 4%;
+    scale: 1.11;
+   }
+  }
+  
+  .circle2 {
+    position: fixed;
+    bottom: 5%;
+    right: 30%;
+    width: 14em;
+    height: 14em;
+    border-radius: 50%;
+    box-shadow: 0 0 50px #5648d8;
+    background: linear-gradient(-25deg, #5648d8, #8641f4);
+    animation: circle2Animate 4s infinite;
+  }
+  @keyframes circle2Animate {
+    50% {
+      bottom: 10%;
+      right: 20%;
+    }
+  }
+  .circle3 {
+    position: fixed;
+    top: 0%;
+    left: 80%;
+    width: 12em;
+    height: 12em;
+    border-radius: 50%;
+    box-shadow: 0 0 50px #d848bb;
+    background: linear-gradient(-25deg, #d848d1, #f441e2);
+    animation: circle3Animate 14s infinite;
+  }
+  @keyframes circle3Animate {
+    50% {
+      top: 3%;
+      left: 85%;
+      scale:1.1;
+    }
+  }
+  .circle4 {
+    position: fixed;
+    bottom: 15%;
+    left: 10%;
+    width: 10em;
+    height: 10em;
+    border-radius: 45%;
+    box-shadow: 0 0 50px #d8488b;
+    background: linear-gradient(-25deg, #d8487d, #f44195);
+    animation: circle4Animate 14s infinite;
+  }
+  @keyframes circle4Animate {
+    50% {
+      bottom: 6%;
+      left: 5%;
+    }
+  }
+  
+
+
+  .circle5 {
+    position: fixed;
+    bottom: 15%;
+    right: 10%;
+    width: 5em;
+    height: 5em;
+    border-radius: 45%;
+    box-shadow: 0 0 40px #cad848;
+    background: linear-gradient(-25deg, #c7d848, #f4f441);
+    animation: circle5Animate 10s infinite;
+  }
+  @keyframes circle5Animate {
+    50% {
+      bottom: 6%;
+      right: 5%;
+    }
+  }
+  .circle6 {
+    position: fixed;
+    bottom: 50%;
+    left: 10%;
+    width: 5em;
+    height: 5em;
+    border-radius: 45%;
+    box-shadow: 0 0 40px #56d848;
+    background: linear-gradient(-25deg, #48d86a, #41f468);
+    animation: circle6Animate 4s infinite;
+  }
+  @keyframes circle6Animate {
+    50% {
+      bottom: 60%;
+      left: 14%;
+    }
+  }
+  .circle7 {
+    position: fixed;
+    top: 35%;
+    right: 10%;
+    width: 7em;
+    height: 7em;
+    border-radius: 50%;
+    box-shadow: 0 0 30px #48d1d8;
+    background: linear-gradient(-25deg, #48d8d8, #41c4f4);
+    animation: circle7Animate 5s infinite;
+  }
+  @keyframes circle7Animate {
+    50% {
+      top: 45%;
+      right: 15%;
+    }
+  }
+  .circle8 {
+    position: fixed;
+    bottom: 45%;
+    left: 40%;
+    width: 7em;
+    height: 7em;
+    border-radius: 50%;
+    box-shadow: 0 0 30px #d1d848;
+    background: linear-gradient(-25deg, #d8d648, #e8f441);
+    animation: circle8Animate 8s infinite;
+  }
+  @keyframes circle8Animate {
+    50% {
+      bottom: 40%;
+      left: 35%;
+      scale: .8;
+    }
+  }
+
+.wrapper{
+    /* position: absolute; */
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff1a;
+    backdrop-filter: blur(3px);
+    border-radius: 15px;
+}
+.wrapper img{
+    height: 180px;
+    width: 180px;
+}
+
+h2{  
+    /* background: linear-gradient(90deg,#00dbde,#fc36ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+    font-family: cursive;
+    font-size: 32px;
+    word-spacing: 13px;
+    color: white;
+    text-shadow:0px 3px 3px rgba(0, 0, 0, 0.82) ;
+    margin:15px 0 ;
+    text-align:center ;
+}
+
+button{
+ /* position: absolute; */
+ outline: none;
+ width: 140px;
+ height: inherit;
+ margin-top: 50px;
+ padding-top: 14px;
+ padding-bottom: 14px;
+ color: rgba(230, 1, 131, 0.884);
+ background-color: rgb(255, 236, 250);
+ font-size: 1.3em;
+ cursor: pointer;
+ box-shadow: 0 2px 4px grey;
+ border: 2px solid rgb(240, 117, 117);
+ border-radius: 18px;
+ transition: all 500ms ease-out;
+}
+button:hover{
+    color:brown;
+}
+@keyframes flow {
+  0% {
+background-position: 0% 50%;
+}
+100% {
+background-position: 100%;
+}
+}
+@media only screen and (max-width: 600px) {
+  h2{font-size: 30px;}
+  .wrapper img{
+    height: 130px;
+    width: 130px;
+  }
+  button{
+    width: 130px;
+ height: inherit;
+  }
+}
+@media only screen and (max-width: 589px) {
+  h2{font-size: 28px;}
+  .wrapper img{
+    height: 130px;
+    width: 130px;
+  }
+  button{
+    width: 120px;
+ height: inherit;
+  }
+}
+@media only screen and (max-width: 505px) {
+ .circle2{
+  width: 13em;
+  height: 13em;
+ }
+ .circle4{
+  width: 8em;
+  height: 8em;
+ }
+}
+
+@media only screen and (max-width: 466px) {
+  h2{font-size: 25px;}
+  .wrapper img{
+    height: 120px;
+    width: 120px;
+  }
+  button{
+    width: 100px;
+ height: inherit;
+  }
+}
+.yes-btn{
+    margin-right: 90px;
+}
+.yes-btn:hover{
+    transform: scale(1.06);
+}
+@media only screen and (max-width: 402px) {
+  h2{font-size: 23px;}
+  .wrapper img{
+    height: 120px;
+    width: 120px;
+  }
+  button{
+    width: 100px;
+ height: inherit;
+  }
+  .yes-btn{
+    margin-right: 60px;
+}
+.circle4{
+  width: 8em;
+  height: 8em;
+  }
+  .circle2{
+    width: 11em;
+    height: 11em;
+   }
+}
+@media only screen and (max-width: 366px) {
+  h2{font-size: 23px;
+  word-spacing: 5px;}
+  .wrapper img{
+    height: 120px;
+    width: 120px;
+  }
+  button{
+    width: 110px;
+    height: 50px;
+  }
+  .yes-btn{
+    margin-right: 60px;
+}
+.circle4{
+  width: 6em;
+  height: 6em;
+  }
+}
+@media only screen and (max-width: 323px) {
+  h2{font-size: 23px;
+  word-spacing: 2px;}
+  .wrapper img{
+    height: 120px;
+    width: 120px;
+  }
+  button{
+    width: 110px;
+    height: 50px;
+  }
+  .yes-btn{
+    margin-right: 40px;
+}
+.circle4{
+  width: 6em;
+  height: 6em;
+  }
+}
+.no-btn{
+  position: relative;
+  transition: all 200ms  ease;
+  animation-name: button-move;
+  animation-iteration-count:infinite;
+  animation-direction: alternate;
+}
+.no-btn:hover{
+  transform: scale(0) rotate(360deg);
+}
+
+
+.audio-btn{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  position:relative;
+  height: 3rem;
+  width: 10rem;
+}
+.audio-btn img{
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  margin-top: 20px;
+  padding-left: 15px;
+  transition: all 200ms;
+}
+.audio-btn img:hover{
+  scale: 1.1;
+}
